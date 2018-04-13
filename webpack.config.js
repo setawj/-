@@ -1,8 +1,6 @@
-const webpack = require('webpack');
 const path = require('path');
-
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const extractCSS = new ExtractTextPlugin('[name].bundle.css')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const extractCSS = new ExtractTextPlugin('style.bundle.css');
 
 module.exports = {
     entry : {

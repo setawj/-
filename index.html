@@ -2,11 +2,23 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>hello webpack</title>
-    <link rel="stylesheet" href="./dist/app.bundle.css">
+    <title>PostIt</title>
+    <link rel="stylesheet" href="./dist/style.bundle.css">
 </head>
 <body>
-    <div id="root"></div>
+    <div id="board">
+
+        <div class="postComponent" draggable="true">
+            <div class="postHead">
+                <button type="button" class="btn-minimize-toggle">▲</button>
+                <button type="button" class="btn-delete-toggle">X</button>
+            </div>
+            <div class="postBody">
+                <textarea class="postContent">텍스트를 입력하세요.</textarea>
+            </div>
+        </div>
+
+    </div>
     <script src="./dist/app.bundle.js"></script>
 </body>
 </html>
